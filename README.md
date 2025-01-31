@@ -2,6 +2,14 @@
 
 This Shiny app provides an interactive interface to explore sample metadata, gene counts, and differential expression results. Users can visualize, filter, and analyze datasets to support downstream analysis.
 
+## How to Run the App
+- **Locally in R**: Run the following command in R:
+  ```r
+  library(shiny)
+  runApp("path/to/app")
+  ```
+  Replace `"path/to/app"` with the actual path to your Shiny app directory.
+
 ## Features
 
 ### 1. Sample Information Exploration
@@ -20,7 +28,7 @@ Assess gene count filtering strategies and data structure.
 
 **Inputs:**
 - Normalized counts matrix (CSV format).
-- Filtering controls: 
+- Filtering controls:
   - Slider for minimum variance percentile.
   - Slider for minimum non-zero sample count.
 
@@ -47,3 +55,5 @@ Load and explore differential gene expression results.
 4. Download or export results for further analysis.
 
 This app simplifies transcriptomic data exploration, helping users assess sample characteristics, filter genes, and analyze differential expression results efficiently.
+
+
